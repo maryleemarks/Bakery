@@ -43,6 +43,16 @@ namespace Bakery.Tests
        Assert.AreEqual(finalPastryPriceTest, finalPastryPrice);
      }
 
+     [TestMethod]
+     public void FinalPastryPrice_ReturnsPastryPriceSpecial_Int()
+     {
+       int totalPastryAmount = 3;
+       int finalPastryPriceTest = 5;
+       Pastry newPastry = new Pastry(totalPastryAmount);
+       int finalPastryPrice = newPastry.FinalPastryPrice();
+       Assert.AreEqual(finalPastryPriceTest, finalPastryPrice);
+     }
+
 
   }
 }

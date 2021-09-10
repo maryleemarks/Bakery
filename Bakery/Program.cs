@@ -22,7 +22,7 @@
       Bread orderBread = new Bread(BreadAmount);
       Pastry orderPastry = new Pastry(PastryAmount);
       int finalPrice = orderBread.FinalBreadPrice() + orderPastry.FinalPastryPrice();
-      Console.WriteLine("Your order is $" + finalPrice);
+      Console.WriteLine("Your order is $" + finalPrice + ". Now let's get this bread!");
       }
     }
    }

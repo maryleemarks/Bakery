@@ -16,8 +16,12 @@
       Console.WriteLine("How many loaves of bread would you like?");
       string stringBreadAmount = Console.ReadLine();
       int BreadAmount = int.Parse(stringBreadAmount);
+      Console.WriteLine("How many pastries would you like?");
+      string stringPastryAmount = Console.ReadLine();
+      int PastryAmount = int.Parse(stringPastryAmount);
       Bread orderBread = new Bread(BreadAmount);
-      int finalPrice = orderBread.FinalBreadPrice();
+      Pastry orderPastry = new Pastry(PastryAmount);
+      int finalPrice = orderBread.FinalBreadPrice() + orderPastry.FinalPastryPrice();
       Console.WriteLine("Your order is $" + finalPrice);
       }
     }

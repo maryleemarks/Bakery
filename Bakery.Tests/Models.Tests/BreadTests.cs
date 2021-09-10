@@ -52,7 +52,5 @@ namespace Bakery.Tests
        int finalBreadPrice = newBread.FinalBreadPrice();
        Assert.AreEqual(finalBreadPriceTest, finalBreadPrice);
      }
-
-
   }
 }

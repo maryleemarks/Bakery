@@ -43,6 +43,16 @@ namespace Bakery.Tests
        Assert.AreEqual(finalBreadPriceTest, finalBreadPrice);
      }
 
+     [TestMethod]
+     public void FinalBreadPrice_ReturnsBreadPriceSpecial_Int()
+     {
+       int totalBreadAmount = 3;
+       int finalBreadPriceTest = 10;
+       Bread newBread = new Bread(totalBreadAmount);
+       int finalBreadPrice = newBread.FinalBreadPrice();
+       Assert.AreEqual(finalBreadPriceTest, finalBreadPrice);
+     }
+
 
   }
 }

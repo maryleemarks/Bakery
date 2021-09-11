@@ -52,7 +52,5 @@ namespace Bakery.Tests
        int finalPastryPrice = newPastry.FinalPastryPrice();
        Assert.AreEqual(finalPastryPriceTest, finalPastryPrice);
      }
-
-
   }
 }

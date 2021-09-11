@@ -13,23 +13,23 @@ namespace Bakery.Models
     {
       PastryAmount = pastryAmount;
     }
-  public int FinalPastryPrice()  
-  {
-    if (PastryAmount % 3 == 0)
+  
+    public int FinalPastryPrice()  
     {
-      int FinalPastryPrice = (PastryAmount / 3) * 5;
-      return FinalPastryPrice;
-    }
-    else if (PastryAmount % 3 > 0 && PastryAmount >3)
-    {
-      int FinalPastryPrice = ((PastryAmount / 3) *5) + ((PastryAmount % 3) * PastryPrice);
-      return FinalPastryPrice;
-    }
-    else
-    {
+     if (PastryAmount % 3 == 0)
+      {
+        int FinalPastryPrice = (PastryAmount / 3) * 5;
+        return FinalPastryPrice;
+      }
+      else if (PastryAmount % 3 > 0 && PastryAmount >3)
+      {
+        int FinalPastryPrice = ((PastryAmount / 3) *5) + ((PastryAmount % 3) * PastryPrice);
+        return FinalPastryPrice;
+      }
+      else
+      {
       return PastryPrice * PastryAmount;
+      }
     }
-  }
-
   }
 }
